@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h2 class="mt-4 text-teal-500 text-center 
+    font-bold text-4xl">Money Master</h2>
+    <section class="flex flex-col lg:flex-row mx-auto justify-center align-center items-center lg:items-stretch  mt-12">
+        <div class="flex flex-col align-center ">
+            <img class="w-11/12 h-5/6 mx-auto" src="assets/pexels.jpeg" alt="">
+        </div>
+        <div class="bg-slate-50 text-center  w-5/12 h-4/5 font-sans grid justify-center">
+            <h4 class="font-semibold mt-5 mb-1">Income</h4>
+            <div class="flex mt-5 justify-center px-4">
+                <h4 class="mr-2 text-save ">Income: </h4>
+                <input id="income-field" class=" bg-slate-200" type="text">
+            </div>
+            <h4 class="font-semibold mt-5 mb-2  text-save">Expenses</h4>
+            <div class="flex mb-2 mt-2 justify-center px-4">
+                <h4 class="mr-2 ml-4 text-save">Food: </h4>
+                <input id="food-field" class=" bg-slate-200" type="text">
+            </div>
+            <div class="flex mb-2 mt-5 justify-center px-4">
+                <h4 class="mr-2 ml-4 text-save">Rent: </h4>
+                <input id="rent-field" class=" bg-slate-200" type="text">
+            </div>
+            <div class="flex mb-2 mt-3 justify-center">
+                <h4 class="mr-1 text-save">Clothes:</h4>
+                <input id="cloth-field" class=" bg-slate-200" type="text">
+            </div>
+            <button id="btn-calculate" class="text-white bg-cyan-500 w-40 py-3 rounded mt-4 mb-3 text-center mx-auto">Calculate</button>
+            <h4 class="font-bold mt-2 mb-3  text-save">Total Expenses : <span id="total-expense">00</span></h4>
+            <h4 class="font-bold mt-2 mb-4  text-save">Balance : <span id="total-balance">00</span></h4>
+            <div class="flex mb-2">
+                <h4 class="mr-2 ml-4  text-save">Save: </h4>
+                <input id="save-field" class=" bg-slate-200" type="text">
+                <h4 class="px-4">%</h4>
+                <button id="btn-save" class="text-white bg-cyan-500 w-28 rounded text-center mx-auto py-1">Save</button>
+            </div>
+            <h4 class="font-bold mt-2 mb-2  text-save">Saving Amount : <span id="saving-field">00</span></h4>
+            <h4 class="font-bold mt-3 mb-2 text-save">Remaining Balance : <span id="remaining-field">00</span></h4>
+        </div>
+    </section>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
